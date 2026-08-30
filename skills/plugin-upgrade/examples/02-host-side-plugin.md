@@ -86,7 +86,7 @@ export class MyService {
    | `executeRemote('session', 'list', args)` | `ctx.remote.session.list(args)` | `if (!result.ok)` 分支 |
    | `executeRemote('session', 'get', args)` | `ctx.remote.session.get(args)` | 读 `result.error.code` |
 
-   参考 [ALPHA1-01](../references/v0.1.2-alpha.1.md) 的 17 条操作映射表。
+   参考 [DSH-0.1.2-A1-01](../references/v0.1.2-alpha.1.md) 的 17 条操作映射表。
 
 4. **错误处理三原则**:
    - Consumer 侧 Remote 方法**永不 reject**，返回 `RemoteResult<T>`
